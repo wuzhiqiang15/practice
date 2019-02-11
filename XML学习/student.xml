@@ -1,0 +1,16 @@
+<School>
+    <Teacher desc="PythonTeacher" score="good">
+        <Name>LiuDana</Name>
+        <Age detail="Age for year 2010">18</Age>
+        <Mobile>18989478268</Mobile>
+    </Teacher>
+    <Student>
+        <Name Other="他是班长">zhangSan</Name>
+        <Age Detail="班上最年轻的一个">14</Age>
+    </Student>
+    <Student>
+        <Name>LiSi</Name>
+        <Age>19</Age>
+        <Mobile>15083663786</Mobile>
+    </Student>
+</School>

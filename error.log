@@ -1,0 +1,2 @@
+2018-08-22 11:50:52,858 - ERROR -logging_03.py[:36] - this is a error log
+2018-08-22 11:50:52,858 - CRITICAL -logging_03.py[:37] - this is a critical log

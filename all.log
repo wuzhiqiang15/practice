@@ -1,0 +1,5 @@
+08/22/2018 11:50:52 - DEBUG - this is a debug log
+08/22/2018 11:50:52 - INFO - this is a info log
+08/22/2018 11:50:52 - WARNING - this is a warning log
+08/22/2018 11:50:52 - ERROR - this is a error log
+08/22/2018 11:50:52 - CRITICAL - this is a critical log

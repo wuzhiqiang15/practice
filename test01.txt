@@ -1,0 +1,30 @@
+DEBUG:root:this is a debug log.
+INFO:root:this is a info log.
+WARNING:root:this is a warning log
+ERROR:root:this is a error log
+CRITICAL:root:this is a critical log
+INFO:root:this is a info log.
+WARNING:root:this is a warning log
+ERROR:root:this is a error log
+CRITICAL:root:this is a critical log
+2018-08-21 15:51:00,959 - INFO - this is a info log.
+2018-08-21 15:51:00,959 - WARNING - this is a warning log
+2018-08-21 15:51:00,959 - ERROR - this is a error log
+2018-08-21 15:51:00,959 - CRITICAL - this is a critical log
+08/21/2018 15:58:43 PM - INFO - this is a info log.
+08/21/2018 15:58:43 PM - WARNING - this is a warning log
+08/21/2018 15:58:43 PM - ERROR - this is a error log
+08/21/2018 15:58:43 PM - CRITICAL - this is a critical log
+08/21-2018 15:59:37 PM - INFO - this is a info log.
+08/21-2018 15:59:37 PM - WARNING - this is a warning log
+08/21-2018 15:59:37 PM - ERROR - this is a error log
+08/21-2018 15:59:37 PM - CRITICAL - this is a critical log
+08/21/2018 16:00:03 - INFO - this is a info log.
+08/21/2018 16:00:03 - WARNING - this is a warning log
+08/21/2018 16:00:03 - ERROR - this is a error log
+08/21/2018 16:00:03 - CRITICAL - this is a critical log
+08/21/2018 16:13:12 - INFO - this is a info log.
+08/21/2018 16:13:12 - WARNING - this is a warning log
+08/21/2018 16:13:12 - ERROR - this is a error log
+08/21/2018 16:13:12 - CRITICAL - this is a critical log
+08/21/2018 16:13:12 - WARNING - Tom is 15 years old.
