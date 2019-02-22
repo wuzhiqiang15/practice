@@ -16,42 +16,52 @@ NEWSPIDER_MODULE = 'tutorial.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'tutorial (+http://www.yourdomain.com)'
+USER_AGENT = 'tutorial (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+# 默认遵守robots协议，为了应对反爬虫，一般建议用False
+ROBOTSTXT_OBEY = False
+
+# 设置日志文件
+LOG_FILE = "tutorial.log"
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
+# scrapy设置最大并发数，默认是16个并发
 #CONCURRENT_REQUESTS = 32
 
 # Configure a delay for requests for the same website (default: 0)
 # See https://doc.scrapy.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
+# 设置批量的延迟请求，默认是发16个请求，然后等待3秒钟，再发16个请求
 #DOWNLOAD_DELAY = 3
 # The download delay setting will honor only one of:
 #CONCURRENT_REQUESTS_PER_DOMAIN = 16
 #CONCURRENT_REQUESTS_PER_IP = 16
 
 # Disable cookies (enabled by default)
+# 是否禁用cookies
 #COOKIES_ENABLED = False
 
 # Disable Telnet Console (enabled by default)
 #TELNETCONSOLE_ENABLED = False
 
 # Override the default request headers:
-#DEFAULT_REQUEST_HEADERS = {
-#   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-#   'Accept-Language': 'en',
-#}
+# 加载默认的请求头
+DEFAULT_REQUEST_HEADERS = {
+   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+   'Accept-Language': 'en',
+}
 
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
-#SPIDER_MIDDLEWARES = {
-#    'tutorial.middlewares.TutorialSpiderMiddleware': 543,
-#}
+# 爬虫中间件
+SPIDER_MIDDLEWARES = {
+    'tutorial.middlewares.TutorialSpiderMiddleware': 543,
+}
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
+# 下载中间件
 #DOWNLOADER_MIDDLEWARES = {
 #    'tutorial.middlewares.TutorialDownloaderMiddleware': 543,
 #}
@@ -64,9 +74,11 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'tutorial.pipelines.TutorialPipeline': 300,
-#}
+# 在配置文件 开启 管道
+# 优先级范围 0--1000；值越小，优先级越高
+ITEM_PIPELINES = {
+    'tutorial.pipelines.TutorialPipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
