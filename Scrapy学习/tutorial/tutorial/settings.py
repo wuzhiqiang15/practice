@@ -24,6 +24,8 @@ ROBOTSTXT_OBEY = False
 
 # 设置日志文件
 LOG_FILE = "tutorial.log"
+LOG_LEVEL = "WARNING"
+
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 # scrapy设置最大并发数，默认是16个并发
