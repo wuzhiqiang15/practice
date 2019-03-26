@@ -8,13 +8,15 @@ urlpatterns = [
     # Examples:
     # url(r'^$', 'django_01.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
-    # url(r'^admin/', include(admin.site.urls)),
+    url(r'^admin/', include(admin.site.urls)),
 
+    # 使用子路由
     url(r'^meetyou/', include(meetyou_urls)),
+
     # URL中 嵌套参数
     url(r'^book/(?:page-(?P<pagenum>\d+))', mv.do_page),
     # URL中 传递额外参数
-    url(r'extrem/$', mv.extremParam, {"name":"wuzhiqiang"}),
+    url(r'extrem/$', mv.extremParam, {"name": "wuzhiqiang"}),
 
     # 使用 name 来给视图中的方法，增加名称，这样即使修改了路由地址，也不会影响到视图中的函数
     #url(r'^old/(?:url_0(?P<num>\d+))', mv.do_reversal_url, name="revers"),
@@ -23,5 +25,8 @@ urlpatterns = [
     # 先访问v9_get,然后通过渲染后的for_post.html页面，访问v9_post/页面
     url(r'^v9_get/', mv.v9_get),
     url(r'^v9_post/', mv.v9_post),
+
+    # session 的使用
+    url(r'^get_session/', mv.do_get_session),
 
 ]

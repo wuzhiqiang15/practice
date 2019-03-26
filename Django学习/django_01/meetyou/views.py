@@ -34,3 +34,10 @@ def v9_post(request):
         rst += k + "-->" + v
         rst += ","
     return HttpResponse("Get Value of POST is {0}".format(rst))
+
+def do_get_session(request):
+    print('类型为：', type(request.session))
+    print('session的值为：', request.session)
+    # 获取对应key的session，如果没有该key，则返回默认值
+    print(request.session.get('test_name', 'NoValue'))
+    return HttpResponse("Session Test")
